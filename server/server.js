@@ -13,6 +13,7 @@ app.post('/todos',(req,res)=>{
       text:req.body.text
    });
 
+   
    todo.save().then((doc)=>{
          res.send(doc);
    },(e)=>{
@@ -20,6 +21,14 @@ app.post('/todos',(req,res)=>{
    });
 }); 
 
+ app.get('/todos',(req,res)=>{
+Todo.find().then((todo)=>{
+           res.send(todo);
+},(err)=>{
+        res.status(400).send(err);
+});
+ });
+module.exports={app}
 
 
 app.listen(3000,()=>{

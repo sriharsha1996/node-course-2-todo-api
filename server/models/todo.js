@@ -7,12 +7,12 @@ var Todo=mongoose.model('Todo',{
           trim:true
     },
     completed:{
-        type:Boolean,
-        default:false
+       type:Boolean,
+       default:false
     },
     completedAt:{
-         type:Number,
-         default:null
+        type:Number,
+        default:null
     },
 });
 module.exports={Todo}
