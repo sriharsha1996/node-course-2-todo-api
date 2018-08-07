@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha server/**/*.tests.js"
+    "test": "mocha server/**/*.test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ajv": "^6.0.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.1",
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.6",
     "validator": "^10.5.0"
